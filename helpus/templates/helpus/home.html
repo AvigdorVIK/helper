@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>home</title>
-</head>
-<body>
-<h1>'Домашняя страница'</h1>
+{% extends 'helpus/base.html' %}
 
-</body>
-</html>
+{% block content %}
+<h1>{{ title }}</h1>
+<p> Наш сайт </p>
+{% endblock %}
