@@ -6,5 +6,8 @@ class Helpus(models.Model):
     photo = models.ImageField(upload_to="photos/%Y/%m/%d/")
     cat = models.ForeignKey('Category', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.titles
+
 class Category(models.Model):
     name = models.CharField(max_length=200)
